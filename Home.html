@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BU OPENHOUSE</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <style>
+        body {
+            font-family: 'Prompt', sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            background-image: url("https://marketplace.canva.com/EAFa5uMnF34/1/0/1600w/canva-สีฟ้า-สีครีม-ภาพวาด-ดอกไม้-ภาพ-หน้าจอคอม-เดสก์ท็อปคอมพิวเตอร์-mSIwoldkLOQ.jpg");
+            background-size: cover;
+        }
+        nav {
+            position: absolute;
+            top: 20px;
+            left: 50px;
+            background-color: rgba(159, 211, 241, 0.572);
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgb(243, 243, 243);
+        }
+        nav img {
+            height: 80px;
+            vertical-align: middle;
+            margin-right: 10px;
+        }
+        nav a {
+            margin: 15px;
+            text-decoration: none;
+            color: #4e4d4b;
+            font-size: 18px;
+            padding: 10px 15px;
+            border-radius: 4px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        nav a:hover {
+            background-color: #f2f7f7;
+            color: #050409;
+        }
+        .container {
+            display: none; 
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 20px;
+        }
+        .image-box {
+            flex: 3;
+            margin-right: 20px;
+        }
+        .image-box img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .banner { 
+            width: 65%;
+            height: 400px; 
+            margin: 180px auto;
+        }
+        .banner img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <img src="https://bulinks.bu.ac.th/storage/2024/02/logo-bu-white-horizontal-300x98-1.webp" alt="Logo">
+        <a href="Home.html" title="Go to Home">HOME</a>
+        <a href="HIGHLIGHT.html" title="View Highlights">HIGHLIGHT</a>
+        <a href="SCHEDULE.html" title="Explore SCHEDULE">SCHEDULE</a>
+        <a href="FAQ.html" title="Frequently Asked Questions">FAQ</a>
+        <a href="MAP.html" title="View Map">MAP</a>
+    </nav>
+
+    <div class="banner">
+        <div><img src="https://openhouse.bu.ac.th/contents/banner/banner_2_en.jpg?4" alt="Banner 1"></div>
+        <div><img src="https://openhouse.bu.ac.th/contents/banner/banner_3_en.jpg" alt="Banner 2"></div>
+        <div><img src="https://i.ytimg.com/vi/arEnfk1ymmU/maxresdefault.jpg" alt="Banner 3"></div>
+    </div>
+
+    <div class="container">
+        <div class="image-box">
+            <img src="" alt="Description of image">
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.banner').slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                dots: true,
+                arrows: true,
+                infinite: true,
+                speed: 500
+            });
+        });
+    </script>
+</body>
+</html>

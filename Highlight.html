@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BU OPENHOUSE</title>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Prompt', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url("https://images4.alphacoders.com/973/973967.jpg");
+            background-size: cover;
+        }
+        nav {
+            position: absolute;
+            top: 20px;
+            left: 50px;
+            background-color: rgba(159, 211, 241, 0.572);
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgb(243, 243, 243);
+        }
+        nav img {
+            height: 80px;
+            vertical-align: middle;
+            margin-right: 10px;
+        }
+        nav a {
+            margin: 15px;
+            text-decoration: none;
+            color: #4e4d4b;
+            font-size: 18px;
+            padding: 10px 15px;
+            border-radius: 4px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        nav a:hover {
+            background-color: #f2f7f7;
+            color: #050409;
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 160px 20px 0;
+            min-height: 100vh;
+        }
+        .image-row {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            padding: 20px;
+            overflow-x: auto;
+        }
+        .image-box {
+            background-color: #b73034;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgb(0, 0, 0);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .image-box img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+        }
+        .image-box:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+        .message-box {
+            flex: 2;
+            background-color: rgba(255, 255, 255, 0.8);
+            border: 1px solid #000000;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            max-width: 600px;
+        }
+        .message-box h2 {
+            font-size: 24px;
+            color: #333;
+        }
+        .message-box h3 {
+            font-size: 20px;
+            color: #555;
+        }
+        .message-box p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        .bottom-text {
+            font-family: 'Roboto', sans-serif;
+            text-align: center;
+            margin: 20px;
+            font-size: 100px;
+            color: #360c8c;
+            position: fixed;
+            bottom: 130px;
+            left: 0;
+            right: 0;
+            text-shadow: 
+                2px 2px 0 rgba(250, 2, 2, 0.681),
+                -2px -2px 0 rgba(56, 12, 213, 0.789);
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <img src="https://bulinks.bu.ac.th/storage/2024/02/logo-bu-white-horizontal-300x98-1.webp" alt="Logo">
+        <a href="Home.html" title="Go to Home">HOME</a>
+        <a href="HIGHLIGHT.html" title="View Highlights">HIGHLIGHT</a>
+        <a href="SCHEDULE.html" title="Explore SCHEDULE">SCHEDULE</a>
+        <a href="FAQ.html" title="Frequently Asked Questions">FAQ</a>
+        <a href="MAP.html" title="View Map">MAP</a>
+    </nav>
+
+    <div class="container">
+        <div class="image-row">
+            <div class="image-box">
+                <img src="https://images.workpointtoday.com/workpointnews/2021/01/26140901/1611644936_97641_1.jpg" alt="Image 1">
+            </div>
+            <div class="image-box">
+                <img src="https://images.workpointtoday.com/workpointnews/2021/01/26140907/1611644942_15589_2.jpg" alt="Image 2">
+            </div>
+            <div class="image-box">
+                <img src="https://images.workpointtoday.com/workpointnews/2021/01/26140855/1611644930_46800_1.jpg" alt="Image 3">
+            </div>
+            <div class="image-box">
+                <img src="https://images.workpointtoday.com/workpointnews/2021/01/26140921/1611644955_21465_2.jpg" alt="Image 4">
+            </div>
+            <div class="image-box">
+                <img src="https://images.workpointtoday.com/workpointnews/2021/01/26140849/1611644924_31933_2.jpg" alt="Image 5">
+            </div>
+            <div class="image-box">
+                <img src="https://images.workpointtoday.com/workpointnews/2021/01/26140914/1611644948_36108_2.jpg" alt="Image 6">
+            </div>
+        </div>
+        
+        <div class="message-box">
+            <h2>Welcome to BU OPENHOUSE</h2>
+            <h3>Discover the opportunities</h3>
+            <p>Explore the wide range of programs, activities, and events that we offer during the BU Open House. Check out the images to see what awaits you!</p>
+        </div>
+    </div>
+
+    <div class="bottom-text">
+        4EVE
+    </div>
+</body>
+</html>

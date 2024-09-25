@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BU OPENHOUSE</title>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Prompt', sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            background-image: url("https://cdn.pixabay.com/photo/2024/04/12/18/18/ai-generated-8692405_1280.jpg");
+            background-size: cover;
+        }
+
+        nav {
+            position: absolute;
+            top: 20px;
+            left: 50px;
+            background-color: rgba(159, 211, 241, 0.572);
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgb(243, 243, 243);
+        }
+
+        nav img {
+            height: 80px;
+            vertical-align: middle;
+            margin-right: 10px;
+        }
+
+        nav a {
+            margin: 15px;
+            text-decoration: none;
+            color: #4e4d4b;
+            font-size: 18px;
+            padding: 10px 15px;
+            border-radius: 4px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #f2f7f7;
+            color: #050409;
+        }
+
+        .faq-container {
+            width: 600px;
+            margin: 200px auto;
+            background-color: rgb(166, 189, 136);
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #010101;
+        }
+
+        .faq-item {
+            border-bottom: 1px solid #eee;
+            padding: 10px 0;
+        }
+
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+
+        .faq-question {
+            cursor: pointer;
+            font-weight: bold;
+            color: #1e2022;
+            margin-bottom: 5px;
+        }
+
+        .faq-answer {
+            display: none;
+            padding: 5px 0;
+            color: #555;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <img src="https://bulinks.bu.ac.th/storage/2024/02/logo-bu-white-horizontal-300x98-1.webp" alt="Logo">
+        <a href="Home.html" title="Go to Home">HOME</a>
+        <a href="HIGHLIGHT.html" title="View Highlights">HIGHLIGHT</a>
+        <a href="SCHEDULE.html" title="Explore SCHEDULE">SCHEDULE</a>
+        <a href="FAQ.html" title="Frequently Asked Questions">FAQ</a>
+        <a href="MAP.html" title="View Map">MAP</a>
+    </nav>
+
+    <div class="faq-container">
+        <h2>คำถามที่พบบ่อย (FAQ)</h2>
+        <div class="faq-item">
+            <div class="faq-question">1. BU Openhouse คืออะไร?</div>
+            <div class="faq-answer">BU Openhouse เป็นกิจกรรมที่แสดงถึงหลักสูตรและกิจกรรมต่างๆ ที่เสนอโดยมหาวิทยาลัย BU</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">2. ฉันสามารถลงทะเบียนเข้าร่วมกิจกรรมได้ที่ไหน?</div>
+            <div class="faq-answer">คุณสามารถลงทะเบียนได้ผ่านทางเว็บไซต์ของเราโดยกรอกแบบฟอร์มลงทะเบียน</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">3. ควรนำอะไรมาที่ Openhouse?</div>
+            <div class="faq-answer">คุณควรนำบัตรประจำตัวประชาชนและเอกสารที่จำเป็นสำหรับการเข้าร่วมกิจกรรมที่คุณสนใจ</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">4. กิจกรรมจะจัดขึ้นเมื่อไหร่?</div>
+            <div class="faq-answer">กิจกรรมจะจัดขึ้นในวันที่ 12 เดือน ส.ค ปี 2567. โปรดติดตามข้อมูลเพิ่มเติมในเว็บไซต์ของเรา</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">5. จะมีอาหารและเครื่องดื่มให้บริการไหม?</div>
+            <div class="faq-answer">ใช่ จะมีอาหารและเครื่องดื่มให้บริการตลอดกิจกรรม</div>
+        </div>
+    </div>
+
+    <script>
+        const questions = document.querySelectorAll('.faq-question');
+        questions.forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+    </script>
+</body>
+
+</html>

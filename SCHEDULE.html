@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BU OPENHOUSE</title>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Prompt', sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            background-image: url("https://marketplace.canva.com/EAFa5uMnF34/1/0/1600w/canva-สีฟ้า-สีครีม-ภาพวาด-ดอกไม้-ภาพ-หน้าจอคอม-เดสก์ท็อปคอมพิวเตอร์-mSIwoldkLOQ.jpg");
+            background-size: cover;
+        }
+        nav {
+            position: absolute;
+            top: 20px;
+            left: 50px;
+            background-color: rgba(159, 211, 241, 0.572);
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgb(243, 243, 243);
+        }
+        nav img {
+            height: 80px;
+            vertical-align: middle;
+            margin-right: 10px;
+        }
+        nav a {
+            margin: 15px;
+            text-decoration: none;
+            color: #4e4d4b;
+            font-size: 18px;
+            padding: 10px 15px;
+            border-radius: 4px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        nav a:hover {
+            background-color: #f2f7f7;
+            color: #050409;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: calc(100vh - 160px);
+            padding: 110px;
+        }
+        .message-box {
+            flex: 1;
+            background-color: rgba(255, 255, 255, 0.8);
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            max-width: 600px;
+            text-align: center;
+        }
+        .schedule-table {
+            margin: 20px auto;
+            border-collapse: collapse;
+            max-width: 800px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        .schedule-table th, .schedule-table td {
+            border: 1px solid #ccc;
+            padding: 15px;
+            text-align: center;
+        }
+        .schedule-table th {
+            background-color: #f2f2f2;
+            font-size: 18px;
+        }
+        .schedule-table td {
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <img src="https://bulinks.bu.ac.th/storage/2024/02/logo-bu-white-horizontal-300x98-1.webp" alt="Logo">
+        <a href="Home.html" title="Go to Home">HOME</a>
+        <a href="HIGHLIGHT.html" title="View Highlights">HIGHLIGHT</a>
+        <a href="SCHEDULE.html" title="Explore SCHEDULE">SCHEDULE</a>
+        <a href="FAQ.html" title="Frequently Asked Questions">FAQ</a>
+        <a href="MAP.html" title="View Map">MAP</a>
+    </nav>
+
+    <div class="container">
+        <div class="message-box">
+            <h2>ตารางกิจกรรม Open House คณะเทคโนโลยีสารสนเทศ</h2>
+            <table class="schedule-table">
+                <thead>
+                    <tr>
+                        <th>เวลา</th>
+                        <th>กิจกรรม</th>
+                        <th>สถานที่</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>09:00 น.</td>
+                        <td>ลงทะเบียน</td>
+                        <td>ทางเข้าหลัก</td>
+                    </tr>
+                    <tr>
+                        <td>10:00 น.</td>
+                        <td>พิธีเปิด</td>
+                        <td>อาคารประชุม</td>
+                    </tr>
+                    <tr>
+                        <td>10:30 น.</td>
+                        <td>แนะนำหลักสูตร</td>
+                        <td>อาคารประชุม</td>
+                    </tr>
+                    <tr>
+                        <td>11:00 น.</td>
+                        <td>เยี่ยมชมสถานที่</td>
+                        <td>นัดพบที่ทางเข้าหลัก</td>
+                    </tr>
+                    <tr>
+                        <td>12:00 น.</td>
+                        <td>พักกลางวัน</td>
+                        <td>โรงอาหาร</td>
+                    </tr>
+                    <tr>
+                        <td>13:00 น.</td>
+                        <td>การอบรม</td>
+                        <td>ห้องต่าง ๆ</td>
+                    </tr>
+                    <tr>
+                        <td>15:00 น.</td>
+                        <td>ถาม-ตอบ</td>
+                        <td>อาคารประชุม</td>
+                    </tr>
+                    <tr>
+                        <td>16:00 น.</td>
+                        <td>ปิดงาน</td>
+                        <td>อาคารประชุม</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
